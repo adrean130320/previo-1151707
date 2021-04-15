@@ -5,28 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
     <title>Colegio</title>
 </head>
 
 <body>
+    <nav class="navbar">
+        <div>
+            <div class="circle"></div>
+            <div class="date"></div>
+        </div>
+        <ul>
+            <li><a>Inicio</a></li>
+            <li><a>Colegio</a></li>
+            <li><a>Region</a></li>
+            <li><a>Tecnologia</a></li>
+            <li><a>Farrandula</a></li>
+            <li><a>Deporte</a></li>
+            <li><a>Juegos</a></li>
+        </ul>
+    </nav>
+
     <div id="root">
-        <div id="root-notice">
-
-        </div>
+        <div id="root-notice"></div>
         <div id="root-deport-tecnologi">
-            <div id="root-deport">
-
-            </div>
-            <div id="root-deport-tecnology">
-
-            </div>
+            <div id="root-deport"> </div>
+            <div id="root-tecnology"></div>
         </div>
-
     </div>
+
+    <footer>
+        <div>
+            Todos los derechos reservados por Adrian | 2021
+        </div>
+    </footer>
+
     <script src="js/main.js"></script>
     <script>
         app("root-notice");
-        deport();
+        deport("root-deport");
+        tecnology("root-tecnology");
     </script>
 </body>
 
